@@ -1,7 +1,7 @@
 import type { AppProps } from 'next/app'
 import '../styles/tailwind.css'
-import { SpeechContextProvider } from '../hooks/SpeechContext'
-import { InteractionSuppressor } from '../components/layout/InteractionSuppressor'
+import { SpeechContextProvider } from '@/hooks/SpeechContext'
+import { InteractionSuppressor } from '@/layout/InteractionSuppressor'
 
 function ProjectApp({ Component, pageProps }: AppProps) {
   return (

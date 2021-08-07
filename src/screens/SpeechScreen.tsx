@@ -1,7 +1,7 @@
 import clsx from 'clsx'
 import React, { useState, useEffect } from 'react'
 
-import { useSpeech } from '../hooks/speech/useSpeech'
+import { useSpeech } from '@/hooks/useSpeech'
 
 // const phrases: Array<{
 //   icon: VectorIcon | null
@@ -15,7 +15,7 @@ import { useSpeech } from '../hooks/speech/useSpeech'
 
 const phrases = [{ phrase: 'yes' }, { phrase: 'no' }]
 
-export const SpeechScreen: React.FC<{}> = () => {
+export const SpeechScreen: React.FC = () => {
   // const [currentPhrase, setCurrentPhrase] = useState(0)
 
   // const handleNext = () => {
