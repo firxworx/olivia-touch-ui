@@ -16,8 +16,13 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     // "allowSyntheticDefaultImports": true
-    // "baseUrl": ".",
-    // "paths": {}
+    "baseUrl": "./src",
+    "paths": {
+      "@/components/*": ["components/*"],
+      "@/screens/*": ["screens/*"],
+      "@/hooks/*": ["hooks/*"],
+      "@/pages/*": ["pages/*"]
+    }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]
