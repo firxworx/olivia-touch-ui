@@ -5,10 +5,11 @@ import { useSpeech } from '@/hooks/useSpeech'
 import { GridLayout } from '@/layout/GridLayout'
 import { SpeechScreen } from '@/screens/SpeechScreen'
 import { TouchGameScreen } from '@/screens/TouchGameScreen'
+import { ControlsLayout } from '@/layout/ControlsLayout'
 
 const screens = [
-  { name: 'Speech Screen', component: SpeechScreen },
   { name: 'Button Game', component: TouchGameScreen },
+  { name: 'Speech Screen', component: SpeechScreen },
 ]
 
 const Mode: React.FC<{ index: number }> = ({ index }) => {
@@ -40,11 +41,13 @@ export default function IndexPage() {
 
   return (
     <GridLayout>
-      {transitions((styles, modeIndex) => (
-        <animated.div className="w-full h-full" style={{ ...styles }}>
-          <Mode index={modeIndex} />
-        </animated.div>
-      ))}
+      <ControlsLayout>
+        {transitions((styles, modeIndex) => (
+          <animated.div className="w-full h-full" style={{ ...styles }}>
+            <Mode index={modeIndex} />
+          </animated.div>
+        ))}
+      </ControlsLayout>
     </GridLayout>
   )
 }
