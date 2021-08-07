@@ -62,4 +62,11 @@ Noting various chrome/chromium flags to consider when launching the browser bina
 
 ```sh
 --chrome --kiosk --app="https://youtube.com/" --force-app-mode --start-fullscreen --disable-pinch --no-user-gesture-required --overscroll-history-navigation=0 --no-context-menu --profile-directory="PROFILE_NAME_HERE"
+--autoplay-policy=no-user-gesture-required
 ```
+
+## Acknowledgements
+
+Thanks to those who release sound effects under the CC-0 (public domain) license:
+
+- https://freesound.org/people/jayfrosting/ (cheer sound effects)
