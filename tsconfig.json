@@ -16,15 +16,16 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     // "allowSyntheticDefaultImports": true
-    "baseUrl": "./src",
+    "baseUrl": ".",
     "paths": {
-      "@/layout/*": ["layout/*"],
-      "@/components/*": ["components/*"],
-      "@/screens/*": ["screens/*"],
-      "@/hooks/*": ["hooks/*"],
-      "@/pages/*": ["pages/*"]
+      "@/assets/*": ["assets/*"],
+      "@/layout/*": ["src/layout/*"],
+      "@/components/*": ["src/components/*"],
+      "@/screens/*": ["src/screens/*"],
+      "@/hooks/*": ["src/hooks/*"],
+      "@/pages/*": ["src/pages/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", "next-project.d.ts", "**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]
 }
