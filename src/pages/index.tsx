@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { useTransition, animated } from '@react-spring/web'
-import { useSpeech } from '../hooks/speech/useSpeech'
+import { useSpeech } from '../hooks/useSpeech'
 
 import { GridLayout } from '../components/layout/GridLayout'
 import { SpeechScreen } from '../screens/SpeechScreen'
