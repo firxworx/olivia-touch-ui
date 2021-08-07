@@ -9,6 +9,7 @@ import { ControlsLayout } from '@/layout/ControlsLayout'
 
 const screens = [
   { name: 'Button Game', component: TouchGameScreen },
+
   { name: 'Speech Screen', component: SpeechScreen },
 ]
 
@@ -41,7 +42,7 @@ export default function IndexPage() {
 
   return (
     <GridLayout>
-      <ControlsLayout>
+      <ControlsLayout onNextClick={handleNextMode}>
         {transitions((styles, modeIndex) => (
           <animated.div className="w-full h-full" style={{ ...styles }}>
             <Mode index={modeIndex} />
