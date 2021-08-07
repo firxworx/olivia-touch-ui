@@ -11,7 +11,7 @@ export const InteractionSuppressor: React.FC<{ suppressScrolling?: boolean }> = 
   children,
   suppressScrolling = false,
 }) => {
-  useSuppressContextMenu()
+  // useSuppressContextMenu()
   useSuppressMultiTouch()
 
   return <div style={{ touchAction: suppressScrolling ? 'none' : 'pan-x pan-y' }}>{children}</div>
