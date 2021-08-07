@@ -18,6 +18,7 @@
     // "allowSyntheticDefaultImports": true
     "baseUrl": "./src",
     "paths": {
+      "@/layout/*": ["layout/*"],
       "@/components/*": ["components/*"],
       "@/screens/*": ["screens/*"],
       "@/hooks/*": ["hooks/*"],
